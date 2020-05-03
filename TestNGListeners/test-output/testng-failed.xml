@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Learning]">
+  <listeners>
+    <listener class-name="SimpleListeners.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="Admin Test(failed)">
+    <classes>
+      <class name="SimpleListeners.AdminPanelTest">
+        <methods>
+          <include name="fillform"/>
+          <include name="validateData"/>
+        </methods>
+      </class> <!-- SimpleListeners.AdminPanelTest -->
+    </classes>
+  </test> <!-- Admin Test(failed) -->
+</suite> <!-- Failed suite [TestNG Learning] -->
